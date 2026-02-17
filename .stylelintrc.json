@@ -1,0 +1,15 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "**/node_modules/**",
+    "scripts/__dropins__/**",
+    "cypress/**",
+    "drafts/**",
+    "docs/**"
+  ],
+  "rules": {
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "media-feature-range-notation": null
+  }
+}
