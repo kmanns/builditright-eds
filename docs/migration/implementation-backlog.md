@@ -29,6 +29,30 @@
    - `/customer/orders`
    - `/customer/purchase-orders`
    - Added breadcrumb context, explicit page headings, and B2B-focused introductory copy while preserving existing drop-in wrappers.
+13. Completed source copy/IA parity cleanup for detail routes:
+   - `/customer/order-details`
+   - `/customer/purchase-order-details`
+   - Added breadcrumb context, page headings, metadata descriptions, and explanatory content while preserving existing ACCS drop-in wrappers.
+14. Completed source copy/IA parity cleanup for guest order/return routes:
+   - `/order-status`
+   - `/order-details`
+   - `/return-details`
+   - `/create-return`
+   - Added breadcrumb context, page headings, metadata descriptions, and explanatory content while preserving existing ACCS drop-in wrappers.
+15. Completed source copy/IA parity cleanup for quote/requisition detail routes:
+   - `/customer/negotiable-quote`
+   - `/customer/negotiable-quote-template`
+   - `/customer/requisition-list-view`
+   - Added breadcrumb context and clearer B2B flow copy while preserving existing ACCS drop-in wrappers.
+16. Completed source copy/IA parity cleanup for account/company management routes:
+   - `/customer/login`
+   - `/customer/address`
+   - `/customer/company-users`
+   - `/customer/company-roles-permissions`
+   - `/customer/company-structure`
+   - `/customer/company-credit`
+   - `/customer/company-info`
+   - Converted minified drafts to maintainable EDS structure and added breadcrumb + metadata context while preserving drop-in wrappers.
 
 ## How to preview locally (EDS authoring drafts)
 

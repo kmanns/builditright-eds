@@ -106,6 +106,26 @@
 - Normalized account order route content for authoring parity:
   - `/customer/orders`
   - `/customer/purchase-orders`
+- Normalized detail route content for authoring parity:
+  - `/customer/order-details`
+  - `/customer/purchase-order-details`
+- Normalized guest route content for authoring parity:
+  - `/order-status`
+  - `/order-details`
+  - `/return-details`
+  - `/create-return`
+- Normalized quote/requisition detail content for authoring parity:
+  - `/customer/negotiable-quote`
+  - `/customer/negotiable-quote-template`
+  - `/customer/requisition-list-view`
+- Normalized account/company management content for authoring parity:
+  - `/customer/login`
+  - `/customer/address`
+  - `/customer/company-users`
+  - `/customer/company-roles-permissions`
+  - `/customer/company-structure`
+  - `/customer/company-credit`
+  - `/customer/company-info`
 
 ## 9) Known Gaps Requiring Next Iterations
 
