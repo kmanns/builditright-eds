@@ -1,32 +1,12 @@
-import {
-    assertImageListDisplay
-} from "../../assertions";
-
 describe("Verify Product List Page", () => {
-    it("Verify PLP page loads", { tags: "@snapPercy" }, () => {
-        cy.visit("");
+  it("Verify PLP page loads", { tags: "@snapPercy" }, () => {
+    cy.visit("/products");
 
-        // Open Catalog Menu
-        cy.get(".nav-drop").first().should('be.visible').trigger("mouseenter");
+    // EDS migration smoke: verify route and PLP wrapper are present.
+    cy.location("pathname").should("eq", "/products");
+    cy.contains("h1", "All Products").should("be.visible");
+    cy.get(".product-list-page").should("exist");
 
-        // Navaigate to Apperal category page
-        cy.contains("Apparel").should('be.visible').click();
-
-        assertImageListDisplay('.product-discovery-product-list__grid');
-
-        // Assert Position Sort is selected
-        cy.get('select')
-            .find('option:selected')
-            .should('have.text', 'Position');
-
-        // Select new Sort
-        cy.get('select').select('Product Name').should('have.value', 'name_DESC');
-        cy.waitForLoadingSkeletonToDisappear();
-        cy.contains('Youth tee: Colors outside the lines').should('be.visible');
-        assertImageListDisplay('.product-discovery-product-list__grid');
-
-        cy.percyTakeSnapshot('Product List page Category new');
-
-    });
+    cy.percyTakeSnapshot("Product List page");
+  });
 });
-

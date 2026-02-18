@@ -1,0 +1,13 @@
+{
+  "data": [
+    { "Key": "Global.AddProductToCart", "Value": "Add to Cart" },
+    { "Key": "Global.UpdateProductInCart", "Value": "Update Cart" },
+    { "Key": "Global.AddingToCart", "Value": "Adding..." },
+    { "Key": "Global.UpdatingInCart", "Value": "Updating..." },
+    { "Key": "Global.Filters", "Value": "Filters" },
+    { "Key": "Global.Search", "Value": "Search" },
+    { "Key": "Global.MyAccount", "Value": "My Account" },
+    { "Key": "Global.SignIn", "Value": "Sign In" },
+    { "Key": "Global.SignOut", "Value": "Sign Out" }
+  ]
+}

@@ -9,6 +9,7 @@
 
 | Source route | Target route | Page type | Strategy | Tag |
 |---|---|---|---|---|
+| `/index.html` | `/` | Storefront landing | Use authored landing page with ACCS-compatible blocks and links into commerce flows | `content-only` |
 | `/pages/login.html`, `/login.html` | `/customer/login` | Auth | Use existing auth drop-in route | `reuse-existing-block` |
 | `/pages/signup.html`, `/signup.html` | `/customer/create-account` | Auth | Use existing create-account block + auth drop-in | `reuse-existing-block` |
 | `/pages/account.html`, `/account.html` | `/customer/account` | Account dashboard | Use existing account header/nav/sidebar + company switcher | `reuse-existing-block` |
@@ -91,9 +92,23 @@
 - Added explicit B2B flags in `default-site.json`:
   - `commerce-b2b-enabled: true`
   - `commerce-companies-enabled: true`
+- Added P0 draft authored pages and fragment dependencies in `drafts/` for ACCS page skeleton testing:
+  - `/`, `/products`, `/products/default`, `/cart`, `/customer/account`, `/customer/orders`, `/customer/requisition-lists`, `/customer/requisition-list-view`, `/customer/negotiable-quote`
+  - `/nav.plain.html`, `/footer.plain.html`, `/customer/sidebar-fragment.plain.html`
+- Added P0.1 draft authored route coverage for account and B2B subflows:
+  - `/customer/login`, `/customer/create-account`, `/customer/forgotpassword`, `/customer/confirm-account`, `/customer/create-password`
+  - `/customer/address`, `/customer/returns`, `/customer/order-details`, `/customer/return-details`, `/customer/create-return`
+  - `/customer/negotiable-quote-template`
+  - `/customer/purchase-orders`, `/customer/purchase-order-details`
+  - `/customer/approval-rules`, `/customer/approval-rule`, `/customer/approval-rule-details`
+  - `/customer/company-profile`, `/customer/company-users`, `/customer/company-roles-permissions`, `/customer/company-structure`, `/customer/company-credit`, `/customer/company-info`
+  - guest flows: `/order-status`, `/order-details`, `/return-details`, `/create-return`
+- Normalized account order route content for authoring parity:
+  - `/customer/orders`
+  - `/customer/purchase-orders`
 
 ## 9) Known Gaps Requiring Next Iterations
 
 1. Source-specific authored content pages are not yet imported into target content source.
-2. Placeholder JSON files are expected from content repo and still need migration authoring.
+2. Placeholder JSON baseline files exist locally; feature-complete label sets still need migration authoring from source copy.
 3. Full visual parity token package intentionally deferred to P2 to avoid regressions in checkout/account B2B flows.
