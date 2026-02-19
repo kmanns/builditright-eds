@@ -53,6 +53,26 @@
    - `/customer/company-credit`
    - `/customer/company-info`
    - Converted minified drafts to maintainable EDS structure and added breadcrumb + metadata context while preserving drop-in wrappers.
+17. Completed source copy/IA parity cleanup for auth, returns, and approval routes:
+   - `/customer/forgotpassword`
+   - `/customer/confirm-account`
+   - `/customer/create-password`
+   - `/customer/returns`
+   - `/customer/return-details`
+   - `/customer/create-return`
+   - `/customer/approval-rules`
+   - `/customer/approval-rule`
+   - `/customer/approval-rule-details`
+   - Converted minified drafts to maintainable EDS structure and added breadcrumb + metadata context while preserving drop-in wrappers.
+18. Normalized remaining core commerce draft page context:
+   - `/cart`
+   - `/products/default`
+   - Added breadcrumb context and aligned explanatory copy with ACCS storefront flows.
+
+## Phase Status
+
+- P0 (route/block coverage): complete for planned core storefront + B2B route surface.
+- Current workstream: P1 (authoring parity and IA hardening across migrated draft pages).
 
 ## How to preview locally (EDS authoring drafts)
 

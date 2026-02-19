@@ -126,6 +126,19 @@
   - `/customer/company-structure`
   - `/customer/company-credit`
   - `/customer/company-info`
+- Normalized auth/returns/approval content for authoring parity:
+  - `/customer/forgotpassword`
+  - `/customer/confirm-account`
+  - `/customer/create-password`
+  - `/customer/returns`
+  - `/customer/return-details`
+  - `/customer/create-return`
+  - `/customer/approval-rules`
+  - `/customer/approval-rule`
+  - `/customer/approval-rule-details`
+- Normalized remaining core commerce content for authoring parity:
+  - `/cart`
+  - `/products/default`
 
 ## 9) Known Gaps Requiring Next Iterations
 
