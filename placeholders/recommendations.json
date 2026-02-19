@@ -1,1 +1,6 @@
-{ "data": [ { "Key": "Recommendations.Title", "Value": "Recommended for you" } ] }
+{
+  "data": [
+    { "Key": "Recommendations.Title", "Value": "Recommended for you" },
+    { "Key": "Recommendations.Actions.AddToCart", "Value": "Add to Cart" }
+  ]
+}

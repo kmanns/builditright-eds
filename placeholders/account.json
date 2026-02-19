@@ -1,1 +1,11 @@
-{ "data": [ { "Key": "Account.Title", "Value": "My Account" } ] }
+{
+  "data": [
+    { "Key": "Account.Title", "Value": "My Account" },
+    { "Key": "Account.Navigation.Dashboard", "Value": "Dashboard" },
+    { "Key": "Account.Navigation.Orders", "Value": "Orders" },
+    { "Key": "Account.Navigation.Addresses", "Value": "Address Book" },
+    { "Key": "Account.Navigation.Returns", "Value": "Returns" },
+    { "Key": "Account.Actions.Save", "Value": "Save" },
+    { "Key": "Account.Actions.Cancel", "Value": "Cancel" }
+  ]
+}

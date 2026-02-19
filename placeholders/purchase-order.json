@@ -1,1 +1,9 @@
-{ "data": [ { "Key": "PurchaseOrder.Title", "Value": "Purchase Orders" } ] }
+{
+  "data": [
+    { "Key": "PurchaseOrder.Title", "Value": "Purchase Orders" },
+    { "Key": "PurchaseOrder.Details.Title", "Value": "Purchase Order Details" },
+    { "Key": "PurchaseOrder.ApprovalRules.Title", "Value": "Approval Rules" },
+    { "Key": "PurchaseOrder.Actions.CreateRule", "Value": "Create Rule" },
+    { "Key": "PurchaseOrder.Actions.Save", "Value": "Save" }
+  ]
+}

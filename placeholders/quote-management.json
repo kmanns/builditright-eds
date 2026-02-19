@@ -1,1 +1,7 @@
-{ "data": [ { "Key": "QuoteManagement.Title", "Value": "Negotiable Quotes" } ] }
+{
+  "data": [
+    { "Key": "QuoteManagement.Title", "Value": "Negotiable Quotes" },
+    { "Key": "NegotiableQuote.Request.Button.label", "Value": "Request Quote" },
+    { "Key": "NegotiableQuote.Request.Button.insufficientTotalMessage", "Value": "Increase your cart total to request a quote." }
+  ]
+}

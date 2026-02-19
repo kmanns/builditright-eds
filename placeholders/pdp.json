@@ -1,1 +1,7 @@
-{ "data": [ { "Key": "PDP.Title", "Value": "Product Detail" } ] }
+{
+  "data": [
+    { "Key": "PDP.Title", "Value": "Product Detail" },
+    { "Key": "PDP.Actions.AddToCart", "Value": "Add to Cart" },
+    { "Key": "PDP.Actions.UpdateCart", "Value": "Update Cart" }
+  ]
+}

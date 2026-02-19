@@ -1,1 +1,7 @@
-{ "data": [ { "Key": "Wishlist.Title", "Value": "Wishlist" } ] }
+{
+  "data": [
+    { "Key": "Wishlist.Title", "Value": "Wishlist" },
+    { "Key": "Wishlist.Actions.AddToCart", "Value": "Add to Cart" },
+    { "Key": "Wishlist.Actions.Remove", "Value": "Remove" }
+  ]
+}

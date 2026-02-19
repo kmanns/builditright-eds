@@ -1,1 +1,7 @@
-{ "data": [ { "Key": "PaymentServices.Title", "Value": "Payment" } ] }
+{
+  "data": [
+    { "Key": "PaymentServices.Title", "Value": "Payment" },
+    { "Key": "PaymentServices.CreditCard.Title", "Value": "Credit Card" },
+    { "Key": "PaymentServices.Actions.PayNow", "Value": "Pay Now" }
+  ]
+}

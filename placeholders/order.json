@@ -1,1 +1,8 @@
-{ "data": [ { "Key": "Order.Title", "Value": "Orders" } ] }
+{
+  "data": [
+    { "Key": "Order.Title", "Value": "Orders" },
+    { "Key": "Order.Details.Title", "Value": "Order Details" },
+    { "Key": "Order.Returns.Title", "Value": "Returns" },
+    { "Key": "Order.Actions.ViewDetails", "Value": "View Details" }
+  ]
+}

@@ -1,1 +1,10 @@
-{ "data": [ { "Key": "Checkout.Title", "Value": "Checkout" } ] }
+{
+  "data": [
+    { "Key": "Checkout.Title", "Value": "Checkout" },
+    { "Key": "Checkout.Summary.heading", "Value": "Order Summary" },
+    { "Key": "Checkout.Summary.Edit", "Value": "Edit" },
+    { "Key": "Checkout.Addresses.shippingAddressTitle", "Value": "Shipping Address" },
+    { "Key": "Checkout.Addresses.billToNewAddress", "Value": "Bill to New Address" },
+    { "Key": "Checkout.Addresses.billingAddressTitle", "Value": "Billing Address" }
+  ]
+}

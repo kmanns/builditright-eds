@@ -139,6 +139,31 @@
 - Normalized remaining core commerce content for authoring parity:
   - `/cart`
   - `/products/default`
+- Began placeholder-label externalization with concrete consumed-key baseline:
+  - `placeholders/global.json`
+  - `placeholders/checkout.json`
+  - `placeholders/quote-management.json`
+  - `placeholders/cart.json`
+- Expanded placeholder-label baseline across account/company/order/B2B feature sets:
+  - `placeholders/account.json`
+  - `placeholders/auth.json`
+  - `placeholders/company.json`
+  - `placeholders/company-switcher.json`
+  - `placeholders/order.json`
+  - `placeholders/purchase-order.json`
+  - `placeholders/requisition-list.json`
+  - `placeholders/search.json`
+  - `placeholders/payment-services.json`
+  - `placeholders/pdp.json`
+  - `placeholders/recommendations.json`
+  - `placeholders/wishlist.json`
+- Validated draft route wrapper coverage and page-shell structure:
+  - report: `docs/migration/route-sanity-report.md`
+- Added content-source migration handoff checklist:
+  - `docs/migration/content-source-migration-checklist.md`
+  - execution model aligned to DA/`da.live` authoring and publishing
+- Added DA publish execution runbook:
+  - `docs/migration/da-publish-runbook.md`
 
 ## 9) Known Gaps Requiring Next Iterations
 

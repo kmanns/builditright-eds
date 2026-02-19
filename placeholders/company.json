@@ -1,1 +1,12 @@
-{ "data": [ { "Key": "Company.Title", "Value": "Company" } ] }
+{
+  "data": [
+    { "Key": "Company.Title", "Value": "Company" },
+    { "Key": "Company.Profile.Title", "Value": "Company Profile" },
+    { "Key": "Company.Users.Title", "Value": "Company Users" },
+    { "Key": "Company.Roles.Title", "Value": "Roles & Permissions" },
+    { "Key": "Company.Structure.Title", "Value": "Company Structure" },
+    { "Key": "Company.Credit.Title", "Value": "Company Credit" },
+    { "Key": "Company.Actions.Save", "Value": "Save" },
+    { "Key": "Company.Actions.Cancel", "Value": "Cancel" }
+  ]
+}

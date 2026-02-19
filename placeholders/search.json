@@ -1,1 +1,8 @@
-{ "data": [ { "Key": "Search.Title", "Value": "Search" } ] }
+{
+  "data": [
+    { "Key": "Search.Title", "Value": "Search" },
+    { "Key": "Search.Placeholder", "Value": "Search products" },
+    { "Key": "Search.ViewAll", "Value": "View All Results" },
+    { "Key": "Search.NoResults", "Value": "No results found" }
+  ]
+}

@@ -68,6 +68,29 @@
    - `/cart`
    - `/products/default`
    - Added breadcrumb context and aligned explanatory copy with ACCS storefront flows.
+19. Started placeholder externalization hardening with consumed-key coverage:
+   - expanded `placeholders/global.json` for commerce cart/mini-cart, product list/PDP, and order/PO/return header labels.
+   - expanded `placeholders/checkout.json` with checkout summary/address keys used by checkout containers.
+   - expanded `placeholders/quote-management.json` with negotiable quote request button labels/messages.
+   - expanded `placeholders/cart.json` with `Cart.PriceSummary.checkout`.
+20. Completed second placeholder baseline expansion for account/B2B flows:
+   - expanded `placeholders/account.json`, `placeholders/auth.json`, `placeholders/company.json`, `placeholders/company-switcher.json`.
+   - expanded `placeholders/order.json`, `placeholders/purchase-order.json`, `placeholders/requisition-list.json`.
+   - expanded `placeholders/search.json`, `placeholders/payment-services.json`, `placeholders/pdp.json`, `placeholders/recommendations.json`, `placeholders/wishlist.json`.
+   - validated all placeholder JSON files for syntax.
+21. Completed draft route sanity sweep:
+   - validated wrapper presence for migrated commerce and B2B routes.
+   - validated page shell structure for full pages (`header/main/footer`).
+   - generated report: `docs/migration/route-sanity-report.md`.
+22. Prepared content-source migration execution checklist:
+   - route-to-content path mapping for all finalized draft pages.
+   - fragment dependency plan and staged publish order.
+   - post-publish smoke checklist and sign-off criteria.
+   - DA/`da.live` authoring and publish workflow details added.
+   - document: `docs/migration/content-source-migration-checklist.md`.
+23. Added DA operational publish runbook:
+   - batch-by-batch execution checklist with route mappings and gate checks.
+   - document: `docs/migration/da-publish-runbook.md`.
 
 ## Phase Status
 
@@ -95,11 +118,11 @@
    - map source headings/body copy to each migrated route
    - align breadcrumbs and section intros with source intent
 2. Placeholder externalization:
-   - move current inline copy to placeholders where drop-ins expect labels
+   - align placeholder values to finalized source-approved copy and localization strategy
 3. Content source migration prep:
-   - mirror finalized draft pages into CMS content source and update nav/footer fragments there
+   - execute `docs/migration/content-source-migration-checklist.md` in preview environment
 4. B2B route validation pass:
-   - verify permission-driven redirects and visibility across PO/quote/company screens
+   - verify permission-driven redirects and visibility across PO/quote/company screens (runtime with backend)
 
 ## Validation gates
 

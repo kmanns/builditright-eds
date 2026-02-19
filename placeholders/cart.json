@@ -1,1 +1,6 @@
-{ "data": [ { "Key": "Cart.Title", "Value": "Shopping Cart" } ] }
+{
+  "data": [
+    { "Key": "Cart.Title", "Value": "Shopping Cart" },
+    { "Key": "Cart.PriceSummary.checkout", "Value": "Checkout" }
+  ]
+}
