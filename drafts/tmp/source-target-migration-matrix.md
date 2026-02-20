@@ -164,6 +164,8 @@
   - execution model aligned to DA/`da.live` authoring and publishing
 - Added DA publish execution runbook:
   - `docs/migration/da-publish-runbook.md`
+- Added DA copy/paste execution sheet:
+  - `docs/migration/da-copy-paste-pack.md`
 
 ## 9) Known Gaps Requiring Next Iterations
 

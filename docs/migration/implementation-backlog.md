@@ -91,6 +91,9 @@
 23. Added DA operational publish runbook:
    - batch-by-batch execution checklist with route mappings and gate checks.
    - document: `docs/migration/da-publish-runbook.md`.
+24. Added DA copy/paste pack for fast execution:
+   - minimal route-to-source list by publish batch.
+   - document: `docs/migration/da-copy-paste-pack.md`.
 
 ## Phase Status
 
