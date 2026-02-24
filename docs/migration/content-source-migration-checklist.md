@@ -27,14 +27,15 @@ Use this execution model for every route in this checklist:
 For fragments:
 
 1. Create fragment documents at:
-   - `/nav.plain`
-   - `/footer.plain`
-   - `/customer/sidebar-fragment.plain`
+   - `/nav`
+   - `/footer`
+   - `/customer/sidebar-fragment`
 2. Paste content from local fragment source files:
    - `drafts/nav.plain.html`
    - `drafts/footer.plain.html`
    - `drafts/customer/sidebar-fragment.plain.html`
 3. Publish fragments first before dependent pages.
+4. Runtime resolves these as `.plain.html` automatically (for example `/nav` -> `/nav.plain.html`).
 
 ## Route Mapping Plan
 
@@ -82,9 +83,9 @@ Use the following source-to-content-path mapping:
 
 Publish these first:
 
-1. `drafts/nav.plain.html` -> `/nav.plain.html`
-2. `drafts/footer.plain.html` -> `/footer.plain.html`
-3. `drafts/customer/sidebar-fragment.plain.html` -> `/customer/sidebar-fragment.plain.html`
+1. `drafts/nav.plain.html` -> `/nav`
+2. `drafts/footer.plain.html` -> `/footer`
+3. `drafts/customer/sidebar-fragment.plain.html` -> `/customer/sidebar-fragment`
 
 ## Publish Sequence
 

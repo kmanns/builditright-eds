@@ -6,9 +6,9 @@ Use this runbook during DA (`da.live`) execution. Mark each item as complete whe
 
 ## Batch 0: Fragments
 
-- [ ] `/nav.plain` created from `drafts/nav.plain.html`
-- [ ] `/footer.plain` created from `drafts/footer.plain.html`
-- [ ] `/customer/sidebar-fragment.plain` created from `drafts/customer/sidebar-fragment.plain.html`
+- [ ] `/nav` created from `drafts/nav.plain.html`
+- [ ] `/footer` created from `drafts/footer.plain.html`
+- [ ] `/customer/sidebar-fragment` created from `drafts/customer/sidebar-fragment.plain.html`
 - [ ] preview validated for all 3 fragments
 - [ ] fragments published
 

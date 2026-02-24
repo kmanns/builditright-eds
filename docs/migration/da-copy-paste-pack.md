@@ -7,9 +7,9 @@ Format per row:
 
 ## Batch 0: Fragments
 
-- `/nav.plain` -> `drafts/nav.plain.html`
-- `/footer.plain` -> `drafts/footer.plain.html`
-- `/customer/sidebar-fragment.plain` -> `drafts/customer/sidebar-fragment.plain.html`
+- `/nav` -> `drafts/nav.plain.html`
+- `/footer` -> `drafts/footer.plain.html`
+- `/customer/sidebar-fragment` -> `drafts/customer/sidebar-fragment.plain.html`
 
 ## Batch 1: Global Storefront
 
