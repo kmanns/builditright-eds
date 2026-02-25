@@ -3,30 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BuildRight Storefront</title>
-  <meta name="description" content="BuildRight B2B storefront powered by Adobe Commerce as a Cloud Service and Edge Delivery Services.">
+  <title>BuildRight Solutions | ACCS Storefront</title>
+  <meta name="description" content="BuildRight ACCS B2B storefront for contractors and procurement teams.">
   <script type="module" src="/scripts/scripts.js"></script>
 </head>
 <body>
   <header></header>
   <main>
     <div>
-      <h1>BuildRight Storefront</h1>
-      <p>ACCS B2B migration landing page. Use this route as the default entrypoint for local EDS preview and smoke testing.</p>
-      <p>
-        <a href="/products">Browse Products</a> |
-        <a href="/customer/account">My Account</a> |
-        <a href="/customer/company-profile">Company Profile</a> |
-        <a href="/cart">Cart</a>
-      </p>
+      <div class="hero homepage-hero">
+        <div>
+          <div>
+            <picture>
+              <source media="(min-width: 900px)" srcset="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Construction site and building materials">
+            </picture>
+            <h1>BuildRight Solutions</h1>
+            <p class="home-hero-copy">Professional building materials distribution for contractors and B2B procurement teams.</p>
+            <p>
+              <a href="/products" class="button">Shop All Products</a>
+              <a href="/customer/company-profile" class="button secondary">Manage Company Account</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Shop By Job</h2>
+      <p>Get started with curated material flows for common construction and renovation jobs.</p>
+      <div class="cards home-job-cards">
+        <div>
+          <div>
+            <picture>
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=80" alt="Bathroom remodel">
+            </picture>
+          </div>
+          <div>
+            <p><strong>Remodel a Bathroom</strong></p>
+            <p>Fixtures, tile prep, fasteners, and waterproofing materials.</p>
+            <p><a href="/products">Start Project</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <picture>
+              <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80" alt="Window installation">
+            </picture>
+          </div>
+          <div>
+            <p><strong>Install Windows</strong></p>
+            <p>Window units, flashing tape, trim, and sealants for a clean install.</p>
+            <p><a href="/products">Start Project</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <picture>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="Plumbing repair">
+            </picture>
+          </div>
+          <div>
+            <p><strong>Repair Plumbing</strong></p>
+            <p>Pipe, valves, repair kits, and tools for quick service calls.</p>
+            <p><a href="/products">Start Project</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <picture>
+              <img src="https://images.unsplash.com/photo-1656646549607-8fda5837a4ca?auto=format&fit=crop&w=900&q=80" alt="Deck construction">
+            </picture>
+          </div>
+          <div>
+            <p><strong>Build a Deck</strong></p>
+            <p>Lumber, hardware, and exterior finishes for outdoor builds.</p>
+            <p><a href="/products">Start Project</a></p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div>
       <h2>Featured Products</h2>
+      <p>Explore products recommended for your team and common procurement lists.</p>
       <div class="product-recommendations">
         <div>
           <div>heading</div>
           <div>Recommended for Your Team</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Featured Categories</h2>
+      <div class="cards home-category-cards">
+        <div>
+          <div>
+            <p><strong>Structural Materials</strong></p>
+            <p>Lumber, studs, beams, and framing components.</p>
+            <p><a href="/products">Browse Category</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>Windows and Doors</strong></p>
+            <p>Commercial and residential openings, frames, and accessories.</p>
+            <p><a href="/products">Browse Category</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>Fasteners and Hardware</strong></p>
+            <p>Screws, anchors, brackets, and specialty hardware kits.</p>
+            <p><a href="/products">Browse Category</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>Roofing Materials</strong></p>
+            <p>Shingles, underlayment, flashing, and roof ventilation products.</p>
+            <p><a href="/products">Browse Category</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>Framing and Drywall</strong></p>
+            <p>Panels, compound, tape, and framing accessories.</p>
+            <p><a href="/products">Browse Category</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>View All Products</strong></p>
+            <p>Access your full storefront catalog and B2B pricing.</p>
+            <p><a href="/products">Browse Catalog</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="columns home-cta-band">
+        <div>
+          <div>
+            <h2>Built for B2B Purchasing</h2>
+            <p>Manage company accounts, requisition lists, approval flows, and purchase orders in one storefront.</p>
+            <p>
+              <a href="/customer/account" class="button">Go to My Account</a>
+              <a href="/cart" class="button secondary">View Cart</a>
+            </p>
+          </div>
+          <div>
+            <picture>
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="B2B purchasing workflow dashboard">
+            </picture>
+          </div>
         </div>
       </div>
     </div>

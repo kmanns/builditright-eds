@@ -560,11 +560,83 @@ body.columns main > .section:empty {
     flex-direction: row;
   }
 
-  body.columns main > .section {
+body.columns main > .section {
     flex: 1;
     flex-basis: var(--column-width, auto);
     max-width: var(--column-width, auto);
   }
+}
+
+/* Homepage composition */
+.homepage-hero {
+  min-height: 460px;
+  border-radius: var(--shape-border-radius-2);
+  overflow: hidden;
+}
+
+.homepage-hero h1 {
+  color: var(--color-neutral-50);
+  max-width: 740px;
+  margin: 0 auto;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+}
+
+.homepage-hero p {
+  color: var(--color-neutral-50);
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+}
+
+.homepage-hero .button {
+  margin-right: var(--spacing-small);
+}
+
+.home-hero-copy {
+  font: var(--type-headline-2-default-font);
+  letter-spacing: var(--type-headline-2-default-letter-spacing);
+}
+
+.home-job-cards > ul > li {
+  border: 0;
+  border-radius: var(--shape-border-radius-2);
+  overflow: hidden;
+  box-shadow: var(--shape-shadow-2);
+  background: var(--color-neutral-50);
+}
+
+.home-job-cards .cards-card-body strong {
+  color: var(--color-neutral-900);
+}
+
+.home-category-cards > ul {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.home-category-cards > ul > li {
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--shape-border-radius-2);
+  background: var(--color-surface-elevated);
+  box-shadow: var(--shape-shadow-1);
+}
+
+.home-category-cards .cards-card-body {
+  padding: var(--spacing-small);
+}
+
+.home-cta-band > div {
+  align-items: stretch;
+  gap: var(--spacing-big);
+  background: linear-gradient(120deg, var(--color-neutral-50) 0%, var(--color-neutral-100) 60%, var(--color-brand-50) 100%);
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--shape-border-radius-2);
+  box-shadow: var(--shape-shadow-1);
+  padding: var(--spacing-big);
+}
+
+.home-cta-band .columns-img-col img {
+  border-radius: var(--shape-border-radius-2);
 }
 
 /**
