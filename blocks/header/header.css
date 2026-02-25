@@ -8,11 +8,12 @@
 
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--color-surface);
   width: 100%;
-  z-index: 3;
+  z-index: 20;
   position: fixed;
   border-bottom: 1px solid var(--color-neutral-300);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
 }
 
 header nav {
@@ -152,6 +153,7 @@ header nav .nav-brand a {
   font: var(--type-headline-1-font);
   letter-spacing: var(--type-headline-1-letter-spacing);
   font-weight: bold;
+  color: var(--color-brand-700);
 }
 
 li.nav-drop img {
@@ -191,9 +193,11 @@ header nav .nav-sections ul > li,
 header nav .nav-sections ul > li > a {
   font: var(--type-body-2-strong-font);
   letter-spacing: var(--type-body-2-strong-letter-spacing);
+  color: var(--color-neutral-800);
 }
 
 header nav .nav-brand a:hover {
+  color: var(--color-brand-500);
   text-decoration: none;
 }
 
@@ -258,6 +262,9 @@ header nav .nav-sections ul > li:empty {
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] .submenu-wrapper {
     background-color: var(--color-neutral-50);
     box-sizing: border-box;
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--shape-border-radius-2);
+    box-shadow: var(--shape-shadow-2);
     left: 0;
     max-height: var(--desktop-panel-max-height);
     min-height: var(--desktop-panel-min-height);
@@ -293,7 +300,7 @@ header nav .nav-sections ul > li:empty {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--color-neutral-500);
+    border-bottom: 8px solid var(--color-brand-400);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li ul > li {
@@ -303,7 +310,7 @@ header nav .nav-sections ul > li:empty {
 
   header nav .nav-sections .default-content-wrapper > ul > li:hover,
   header nav .nav-sections .nav-drop[aria-expanded='true'] {
-    background-color: var(--color-neutral-200);
+    background-color: var(--color-brand-50);
   }
 }
 
@@ -335,13 +342,17 @@ header nav .nav-tools {
 }
 
 header nav .nav-tools-wrapper > button {
-  color: var(--color-brand-700);
+  color: var(--color-neutral-800);
   background: transparent;
   padding: 10px;
   border: unset;
   cursor: pointer;
   height: 40px;
   width: 40px;
+}
+
+header nav .nav-tools-wrapper > button:hover {
+  color: var(--color-brand-600);
 }
 
 header nav .nav-tools button.nav-cart-button {
@@ -356,7 +367,7 @@ header nav .nav-tools button.nav-cart-button[data-count]::after {
   position: absolute;
   top: 0;
   right: -2px;
-  background-color: var(--color-brand-700);
+  background-color: var(--color-brand-500);
   color: var(--color-neutral-100);
   border-radius: 50%;
   width: 1.75em;
@@ -547,7 +558,7 @@ header .nav-search-input .search_autocomplete .popover-container {
 .authenticated-user-menu
 li
 > .logoutButton:hover {
-  background-color: lightgray;
+  background-color: var(--color-neutral-200);
 }
 
 .dropdown-wrapper.nav-tools-wrapper .nav-auth-menu-panel .authenticated-user-menu li button {
@@ -568,7 +579,7 @@ li
 }
 
 .dropdown-wrapper.nav-tools-wrapper .nav-auth-menu-panel .authenticated-user-menu li button:hover {
-  background-color: lightgray !important;
+  background-color: var(--color-neutral-200) !important;
   border-radius: 0 !important;
 }
 

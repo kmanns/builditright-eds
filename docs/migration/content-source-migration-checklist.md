@@ -18,11 +18,17 @@ Move finalized local draft pages in `drafts/` into your EDS content source in a 
 
 Use this execution model for every route in this checklist:
 
-1. In DA Site Admin, create the target document path (for example `/customer/orders`).
-2. Copy HTML content from the matching local `drafts/*.html` file into the DA document body.
-3. Save and preview the DA document.
-4. Verify route rendering on preview URL before publishing.
-5. Publish document from DA.
+1. Generate DA-ready files: `npm run migration:da-content`.
+2. In DA Site Admin, create the target document path (for example `/customer/orders`).
+3. Copy content from the matching local `drafts/da/*.html` file into the DA document body.
+4. Save and preview the DA document.
+5. Verify route rendering on preview URL before publishing.
+6. Publish document from DA.
+
+Important:
+
+- DA documents should be named by route (for example `/nav`), not with a `.plain` suffix.
+- Runtime fetches fragment routes as `.plain.html` automatically.
 
 For fragments:
 
@@ -30,10 +36,10 @@ For fragments:
    - `/nav`
    - `/footer`
    - `/customer/sidebar-fragment`
-2. Paste content from local fragment source files:
-   - `drafts/nav.plain.html`
-   - `drafts/footer.plain.html`
-   - `drafts/customer/sidebar-fragment.plain.html`
+2. Paste content from local DA-ready fragment source files:
+   - `drafts/da/nav.plain.html`
+   - `drafts/da/footer.plain.html`
+   - `drafts/da/customer/sidebar-fragment.plain.html`
 3. Publish fragments first before dependent pages.
 4. Runtime resolves these as `.plain.html` automatically (for example `/nav` -> `/nav.plain.html`).
 
@@ -83,9 +89,9 @@ Use the following source-to-content-path mapping:
 
 Publish these first:
 
-1. `drafts/nav.plain.html` -> `/nav`
-2. `drafts/footer.plain.html` -> `/footer`
-3. `drafts/customer/sidebar-fragment.plain.html` -> `/customer/sidebar-fragment`
+1. `drafts/da/nav.plain.html` -> `/nav`
+2. `drafts/da/footer.plain.html` -> `/footer`
+3. `drafts/da/customer/sidebar-fragment.plain.html` -> `/customer/sidebar-fragment`
 
 ## Publish Sequence
 
