@@ -610,6 +610,16 @@ body.columns main > .section {
   color: var(--color-neutral-900);
 }
 
+.home-job-cards .cards-card-body {
+  padding: var(--spacing-small) var(--spacing-small) var(--spacing-medium);
+}
+
+.home-job-cards .cards-card-body a {
+  color: var(--color-brand-500);
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .home-category-cards > ul {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
@@ -625,6 +635,15 @@ body.columns main > .section {
   padding: var(--spacing-small);
 }
 
+.home-category-cards .cards-card-body strong {
+  font-size: 1.8rem;
+}
+
+.home-category-cards .cards-card-body p:last-child a {
+  font-weight: 700;
+  color: var(--color-brand-600);
+}
+
 .home-cta-band > div {
   align-items: stretch;
   gap: var(--spacing-big);
@@ -637,6 +656,23 @@ body.columns main > .section {
 
 .home-cta-band .columns-img-col img {
   border-radius: var(--shape-border-radius-2);
+}
+
+.section.section-dark.home-shop-by-job {
+  background: linear-gradient(130deg, #3a3a3a 0%, #2a2a2a 100%);
+  border-top: 4px solid var(--color-brand-500);
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+  margin: 0;
+  padding: var(--spacing-xbig) 0;
+}
+
+.section.section-dark.home-shop-by-job h2,
+.section.section-dark.home-shop-by-job p {
+  color: var(--color-neutral-50);
+}
+
+.home-shop-by-job .cards > ul > li {
+  background: var(--color-neutral-50);
 }
 
 /**
