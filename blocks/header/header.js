@@ -167,7 +167,23 @@ export default async function decorate(block) {
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  if (fragment) {
+    while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  } else {
+    // Keep header functional if nav fragment is missing/unpublished.
+    nav.innerHTML = `
+      <div><p><a href="/">Home</a></p></div>
+      <div><div class="default-content-wrapper"><ul></ul></div></div>
+      <div></div>
+    `;
+    // eslint-disable-next-line no-console
+    console.error(`Header nav fragment could not be loaded from "${navPath}".`);
+  }
+
+  // Ensure expected brand/sections/tools containers always exist.
+  while (nav.children.length < 3) {
+    nav.append(document.createElement('div'));
+  }
 
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
@@ -176,10 +192,12 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  if (navBrand) {
+    const brandLink = navBrand.querySelector('.button');
+    if (brandLink) {
+      brandLink.className = '';
+      brandLink.closest('.button-container').className = '';
+    }
   }
 
   const navSections = nav.querySelector('.nav-sections');
@@ -209,7 +227,12 @@ export default async function decorate(block) {
       });
   }
 
-  const navTools = nav.querySelector('.nav-tools');
+  let navTools = nav.querySelector('.nav-tools');
+  if (!navTools) {
+    navTools = document.createElement('div');
+    navTools.classList.add('nav-tools');
+    nav.append(navTools);
+  }
 
   /** Wishlist */
   const wishlist = document.createRange().createContextualFragment(`
