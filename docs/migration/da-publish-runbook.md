@@ -20,7 +20,7 @@ npm run migration:da-content
 
 ## Batch 1: Global Storefront
 
-- [ ] `/index` from `drafts/da/index.html`
+- [ ] `/index` from `drafts/da/index-copy-ready.html`
 - [ ] `/products` from `drafts/da/products.html`
 - [ ] `/products/default` from `drafts/da/products/default.html`
 - [ ] `/cart` from `drafts/da/cart.html`

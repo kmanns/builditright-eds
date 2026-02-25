@@ -19,7 +19,7 @@ npm run migration:da-content
 
 ## Batch 1: Global Storefront
 
-- `/index` -> `drafts/da/index.html`
+- `/index` -> `drafts/da/index-copy-ready.html` (DA document authoring with block tables)
 - `/products` -> `drafts/da/products.html`
 - `/products/default` -> `drafts/da/products/default.html`
 - `/cart` -> `drafts/da/cart.html`
